@@ -1,0 +1,24 @@
+# Training configuration
+num_training_steps: 2000
+learning_rate: 5.0e-5  # Increased from 1e-5 for faster initial learning
+log_interval: 50
+
+# Moving average window for metrics logging
+window_size: 100
+
+# Gradient clipping
+max_grad_norm: 1.0
+
+# Device (if null, will auto-detect cuda/cpu)
+device: null
+
+# Checkpoint saving
+checkpoint_interval: 500
+
+# Reproducibility
+seed: 42
+deterministic: false
+
+# Optimizer
+weight_decay: 0.01
+

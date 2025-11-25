@@ -1,0 +1,24 @@
+# Data configuration
+train_data_dir: "data/chunks/train_sample"
+
+eval_datasets:
+  - "Q-TRAFFIC"
+  - "azure_vm_traces_2017"
+
+batch_size: 128
+num_workers: 2
+
+# Dataloader parameters
+loader_config:
+  max_window_length: 64
+  min_context_length: 16
+  max_context_length: 32
+  min_prediction_length: 4
+  max_prediction_length: 16
+  min_length: 256
+
+# Patch sizes supported by the model
+supported_patch_sizes: [8, 16, 32, 64, 128, 256]
+
+# Evaluation parameters
+num_eval_batches: 10
