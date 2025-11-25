@@ -1,0 +1,17 @@
+.cursor
+.pytest_cache
+.venv
+
+# python cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+
+*.pdf
+
+archives
+
+*.parquet
